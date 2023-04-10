@@ -1,13 +1,12 @@
 #define CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 
-int main()
+
+void main()
 {
-    int num1 = 1;
-    float num2 = 3.141592;
+	int x = 1;
+	double y = 3.141592;
+	double z = 4.141592;
 
-    printf("%f\n", num1 + num2);   
-    
-
-   
+	printf("%d + %f = %f", x, y, z);
 }

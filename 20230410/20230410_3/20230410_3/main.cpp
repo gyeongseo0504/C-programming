@@ -1,17 +1,14 @@
-#define C
 #include <stdio.h>
 
-int main()
+void main()
 {
-    int X = 10;
-    int Y = 5;
-    int num;
+    int x = 10;
+    int y = 5;
+    int z;
 
-    num = X - Y;
+	z = x - y;
 
     printf("X - Y = ");
-    printf("%d\n", num);    
+    printf("%d\n", z);
     
-
- 
 }
