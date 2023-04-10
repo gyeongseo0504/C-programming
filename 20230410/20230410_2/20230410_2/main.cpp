@@ -6,7 +6,8 @@ void main()
 {
 	int x = 1;
 	double y = 3.141592;
-	double z = 4.141592;
+	double z = x + y;
 
-	printf("%d + %f = %f", x, y, z);
+
+	printf("%d + %.2lf = %.2lf", x, y, z);
 }
