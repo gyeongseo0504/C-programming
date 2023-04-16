@@ -3,16 +3,16 @@
 
 int main(void)
 {
-    int a,b,c;
-    int min, max;
+    float a,b,c;
+    float min, max;
     printf("세개 의 정수 를 입력해주세요 \n");
 
     printf("첫번째 정수를 입력해주세요 : \n");
-    scanf("%d", &a);
+    scanf("%f", &a);
     printf("두번째 정수를 입력해주세요 : \n");
-    scanf("%d", &b);
+    scanf("%f", &b);
     printf("세번째 정수를 입력해주세요 : \n");
-    scanf("%d", &c);
+    scanf("%f", &c);
     
     if (a >=b)
     {
@@ -34,8 +34,8 @@ int main(void)
         if (b <= c) min = b;
         else min = c;
     }
-    printf("최댓값 : %d\n", max);
-    printf("최솟값 : %d\n", min);
+    printf("최댓값 : %f\n", max);
+    printf("최솟값 : %f\n", min);
 
     return 0;
    

@@ -3,25 +3,25 @@
 
 int main(void)
 {
-    int a, b, c, d, e;
-    int sum;
+    float a, b, c, d, e;
+    double sum;
     double avg;
     printf("다섯개 의 정수 를 입력해주세요 \n");
     printf("첫번째 정수를 입력해주세요 : ");
-    scanf("%d", &a);
+    scanf("%f", &a);
     printf("\n두번째 정수를 입력해주세요 : ");
-    scanf("%d", &b);
+    scanf("%f", &b);
     printf("\n세번째 정수를 입력해주세요 : ");
-    scanf("%d", &c);
+    scanf("%f", &c);
     printf("\n네번째 정수를 입력해주세요 : ");
-    scanf("%d", &d);
+    scanf("%f", &d);
     printf("\n다섯번째 정수를 입력해주세요 : ");
-    scanf("%d", &e);
+    scanf("%f", &e);
 
     sum = a + b + c + d + e;
     avg = sum / 5.0;
 
-    printf("\n합은 %d, 평균은 %lf 입니다.", sum, avg);
+    printf("\n합은 %lf, 평균은 %lf 입니다.", sum, avg);
 
     return 0;
 
