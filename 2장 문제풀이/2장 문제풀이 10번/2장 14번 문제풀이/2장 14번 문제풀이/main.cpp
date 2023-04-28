@@ -44,11 +44,13 @@ void Excersize_2_14(int solution, int answer)
 		printf("\n\n\n");
 		printf("============================  풀 이  =============================\n\n");
 
-		printf("v0(초기속도)는 출발하기 전에 속력이므로 0입니다.  \n");
-
-		printf("v^2 - v0^2 = (2 * a * Δx )이라는 공식을 변형하여\n");
+		printf("관련 공식은 등가속도운동 공식인 v^2 - v0^2 = 2 * a * Δx 이다.\n");
+		printf("v^2 - v0^2 = (2 * a * Δx )이라는 공식을 Δx = v-v0/2*a 로 변형해줍니다\n");
 		printf("나오는 공식인 거리(Δx) = (최종속도(v) - 초기속도(v0)) / (2*가속도(a)) 에 \n");
-		printf("v(최종속도), v0(초기속도) , a(가속도) 값들을 대입하면 \n");
+		printf("v0(초기속도)는 출발하기 전에 속력이므로 %6.2lf 입니다.  \n", frist_velocity);
+		printf("v(최종속도)는 도달하기 위한 속력이므로 %6.2lf 입니다.  \n", final_velocity);
+		printf("a(가속도)는 %6.2lf 으로 가속하는 값입니다.  \n", acceleration);
+		printf("v(최종속도), v0(초기속도) , a(가속도) 값들을 공식에 대입하면 \n");
 		printf("이 경비행기가 %6.2lf m/s 에서 %6.2lf m/s 로 %6.2lf m/s^2 를 가속하여 이륙 속도에 도달하기 위한 Δx(활주거리)가 나옵니다. \n\n", frist_velocity, final_velocity, acceleration);
 
 		printf("\n=================================================================\n");
@@ -61,9 +63,9 @@ void Excersize_2_14(int solution, int answer)
 	{
 		printf("=========================   정 답   =============================\n\n");
 
-		distance = ((final_velocity * final_velocity) - (frist_velocity * frist_velocity ))/ (2*acceleration);
+		distance = ((final_velocity * final_velocity) - (frist_velocity * frist_velocity)) / (2 * acceleration);
 
-		printf("공식인 (거리(Δx) = (최종속도(v) - 초기속도(v0)) / (2*가속도(a))) 에 \n");
+		printf("등가속도운동 공식인 (거리(Δx) = (최종속도(v) - 초기속도(v0)) / (2*가속도(a))) 에 \n");
 		printf("v (최종속도 값), v0 (초기속도 값) , a (가속도 값)을 대입하면\n");
 		printf("Δx = (( %6.2lf m/s  -%6.2lf m/s)) / (2  *%6.2lf m/s^2) = %6.2lf m 입니다. \n", final_velocity, frist_velocity, acceleration, distance);
 
