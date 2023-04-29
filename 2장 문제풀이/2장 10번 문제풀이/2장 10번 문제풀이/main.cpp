@@ -47,7 +47,7 @@ void Excersize_2_10(int solution, int answer)
 		printf("Δv를 1 km = 1000 m로 *1000 을(를) 해주고 h = 3600 s 이므로 /3600 s 을(를) 해줍니다.\n");
 		printf(" %6.2lf * 1000 m / 3600 s = %6.2lf m/s 이고, \n", change_of_velocity, final_change_of_velocity);
 		printf("Δt = %6.2lf m/s / %6.2lf m/s^2 = %6.2lf s \n", final_change_of_velocity, acceleration, time);
-		//5.56m/s / 1.7m/s^2 = 3.27 s
+		//110 - 90m/s  / 1.7m/s^2 = 3.27 s
 
 		printf("\n=================================================================\n");
 		printf("\n\n");
