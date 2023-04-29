@@ -14,7 +14,6 @@
 
 
 
-
 void Excersize_2_14(int solution, int answer)
 {
 
@@ -23,23 +22,15 @@ void Excersize_2_14(int solution, int answer)
 	double acceleration = 3.00;
 	double distance = 0.0;
 
-
 	printf("\n\n");
 	printf("2_14 \n");
 	printf("경비행기가 이륙하기 위해서는 속력이 %6.2lf m/s 에 도달해야 한다.\n\n", final_velocity);
 
 	printf("%6.2lf m/s^2 으로 일정하게 가속한다면 이륙 속도에 도달하기 위해서 얼마의 활주거리가 필요한가? \n\n", acceleration);
 
-
-
-
-
-
-
 	if (solution == SHOW)
 	{
 		distance = ((final_velocity * final_velocity) - (frist_velocity * frist_velocity)) / (2 * acceleration);
-
 
 		printf("\n\n\n");
 		printf("============================  풀 이  =============================\n\n");
@@ -54,14 +45,10 @@ void Excersize_2_14(int solution, int answer)
 		printf("v (최종속도 값), v0 (초기속도 값) , a (가속도 값)을 대입하면\n");
 		printf("Δx = (( %6.2lf m/s ) - (%6.2lf m/s)) / (2  *%6.2lf m/s^2) = %6.2lf m 입니다. \n", final_velocity, frist_velocity, acceleration, distance);
 
-
 		printf("\n=================================================================\n");
 		printf("\n\n\n");
-
-
 	}
 	
-
 	if (answer == SHOW)
 	{
 		printf("=========================   정 답   =============================\n\n");
@@ -72,7 +59,6 @@ void Excersize_2_14(int solution, int answer)
 		printf("=================================================================\n");
 		printf("\n\n\n");
 	}
-
 }
 
 int main(void)
