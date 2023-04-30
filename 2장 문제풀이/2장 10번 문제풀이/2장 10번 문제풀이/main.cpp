@@ -42,10 +42,10 @@ void Excersize_2_10(int solution, int answer)
 		printf("관련 공식은 등가속도운동의 공식 a=Δv/Δt 입니다 \n");
 		printf("a는 가속도 ,Δv는 속도 변화량 , Δt는 시간 변화량 입니다. \n");
 		printf("Δt의 값을 구하기위해 식을 Δt = Δv / a 로 변환하여 줍니다. \n", final_velocity, initial_velocity);
-		printf("Δt= ( %6.2lf km/h - %6.2lf km/h) / %6.2lfm/s^2 . \n", final_velocity, initial_velocity, change_of_velocity, acceleration);
+		printf("Δt= ( %6.2lf km/h - %6.2lf km/h) / %6.2lfm/s^2 . \n", final_velocity, initial_velocity, acceleration);
 		printf("Δt= %6.2lf km/h / %6.2lfm/s^2 . \n", change_of_velocity, acceleration);
 		printf("문제의 해답인 시간을 구하기 위해서는 km/h 를 m/s (으)로 단위를 맞춰줘야 합니다. \n");
-		printf("Δt = ((%6.2lf km/h)*1000/3600) / (%6.2lf m/s^2)\n", change_of_velocity, acceleration);
+		printf("Δt = ((%6.2lf km/h)* 1000m/km /3600s/h) / (%6.2lf m/s^2)\n", change_of_velocity, acceleration);
 		printf("Δt= (%6.2lf m/s) / (%6.2lf m/s^2)\n", final_change_of_velocity, acceleration);
 
 		printf("\n=================================================================\n");
