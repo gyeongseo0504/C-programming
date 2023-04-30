@@ -27,8 +27,7 @@ void Excersize_2_10(int solution, int answer)
 
 	printf("\n\n");
 	printf("2_10 \n");
-	printf("고속도로에서 어떤 자동차가 약 %6.2lf m/s^2 의 가속도를 낼 수 있다.\n\n", acceleration);
-
+	printf("고속도로에서 어떤 자동차가 약 %6.2lf m/s^2 의 가속도를 낼 수 있다.\n", acceleration);
 	printf("이 비율로 %6.2lf km/h 에서 %6.2lf km/h 로 가속하는 데 걸리 는 시간은 얼마나 될까? \n\n", frist_velocity, final_velocity);
 
 	if (solution == SHOW)
@@ -42,12 +41,14 @@ void Excersize_2_10(int solution, int answer)
 
 		printf("관련 공식은 등가속도운동의 공식 a=Δv/Δt 입니다 \n");
 		printf("a는 가속도 ,Δv는 속도 변화량 , Δt는 시간 변화량 입니다. \n");
+		printf("a = (시간 변화량(Δt))%6.2lfm/s - %6.2lfm/s / (속도 변화량(Δv)). \n", final_velocity, frist_velocity);
 		printf("Δv= (최종속도(v)) %6.2lf km/h - (초기속도(v0)) %6.2lf km/h , %6.2lf km/h . \n", final_velocity, frist_velocity , change_of_velocity);
-		printf("속도 변화량을 구해주면 %6.2lf = %6.2lf km/h /Δt. \n", acceleration, change_of_velocity);
+		printf("속도 변화량을 구한 식은 %6.2lf = %6.2lf km/h /Δt. \n", acceleration, change_of_velocity);
 		printf("문제의 해답인 시간을 구하기 위해서는 km/h 를 m/s (으)로 단위를 맞춰줘야 합니다. \n");
 		printf("Δv를 1 km = 1000 m로 *1000 을(를) 해주고 h = 3600 s 이므로 *3600 s 을(를) 해줍니다.\n");
 		printf("그러므로 Δv는 %6.2lf * 1000 m / 3600 s = %6.2lf m/s 이고, \n", change_of_velocity, final_change_of_velocity);
-		
+		printf("(%6.2lf m/s^2) = (((%6.2lf m/s)-(%6.2lf m/s))*1000/3600) / Δt\n", acceleration, final_velocity, frist_velocity );
+		printf("Δt= ((%6.2lf m/s) / (%6.2lf m/s^2)=(%6.2lf s)\n", final_change_of_velocity, acceleration, time);
 
 		printf("\n=================================================================\n");
 		printf("\n\n");
@@ -57,8 +58,7 @@ void Excersize_2_10(int solution, int answer)
 	{
 		printf("=========================   정 답   =============================\n");
 
-		printf("Δt을 구하는 공식Δt = Δv / a 에 값을 대입해주면  \n", final_change_of_velocity, acceleration, time);
-		printf("(((%6.2lf m/s)-(%6.2lf m/s))*1000/3600) / (%6.2lf m/s^2)=(%6.2lf s)\n", final_velocity, frist_velocity, acceleration, time);
+		
 		printf(" %6.2lf s가 소요됩니다. \n", time);
 
 		printf("=================================================================\n");

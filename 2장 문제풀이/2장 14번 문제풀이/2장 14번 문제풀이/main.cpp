@@ -24,8 +24,7 @@ void Excersize_2_14(int solution, int answer)
 
 	printf("\n\n");
 	printf("2_14 \n");
-	printf("경비행기가 이륙하기 위해서는 속력이 %6.2lf m/s 에 도달해야 한다.\n\n", final_velocity);
-
+	printf("경비행기가 이륙하기 위해서는 속력이 %6.2lf m/s 에 도달해야 한다.\n", final_velocity);
 	printf("%6.2lf m/s^2 으로 일정하게 가속한다면 이륙 속도에 도달하기 위해서 얼마의 활주거리가 필요한가? \n\n", acceleration);
 
 	if (solution == SHOW)
@@ -36,6 +35,7 @@ void Excersize_2_14(int solution, int answer)
 		printf("============================  풀 이  =============================\n\n");
 
 		printf("관련 공식은 등가속도운동 공식인 v^2 - v0^2 = 2 * a * Δx 입니다.\n");
+		printf("v:나중속도, v0:처음속도, a:가속도, Δx : 거리변화량   \n");
 		printf("v^2 - v0^2 = (2 * a * Δx )이라는 공식을 Δx = v-v0/2*a 로 변형해줍니다\n");
 		printf("거리(Δx) = (최종속도(v) - 초기속도(v0)) / (2*가속도(a)) 에 \n");
 		printf("v0(초기속도)는 출발하기 전에 속력이므로 %6.2lf  \n", frist_velocity);
