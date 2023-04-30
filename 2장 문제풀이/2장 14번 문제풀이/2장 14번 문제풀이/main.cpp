@@ -17,7 +17,7 @@
 void Excersize_2_14(int solution, int answer)
 {
 
-	double frist_velocity = 0.0;
+	double initial_velocity = 0.0;
 	double final_velocity = 30.0;
 	double acceleration = 3.00;
 	double distance = 0.0;
@@ -29,7 +29,7 @@ void Excersize_2_14(int solution, int answer)
 
 	if (solution == SHOW)
 	{
-		distance = ((final_velocity * final_velocity) - (frist_velocity * frist_velocity)) / (2 * acceleration);
+		distance = ((final_velocity * final_velocity) - (initial_velocity * initial_velocity)) / (2 * acceleration);
 
 		printf("\n\n\n");
 		printf("============================  풀 이  =============================\n\n");
@@ -38,10 +38,10 @@ void Excersize_2_14(int solution, int answer)
 		printf("v:나중속도, v0:처음속도, a:가속도, Δx : 거리변화량   \n");
 		printf("v^2 - v0^2 = (2 * a * Δx )이라는 공식을 Δx = v-v0/2*a 로 변형해줍니다\n");
 		printf("거리(Δx) = (최종속도(v) - 초기속도(v0)) / (2*가속도(a)) 에 \n");
-		printf("v0(초기속도)는 출발하기 전에 속력이므로 %6.2lf  \n", frist_velocity);
+		printf("v0(초기속도)는 출발하기 전에 속력이므로 %6.2lf  \n", initial_velocity);
 		printf("v(최종속도)는 도달하기 위한 속력이므로 %6.2lf   \n", final_velocity);
 		printf("a(가속도)는 %6.2lf 으로 가속하는 값 을 입력해주면  \n", acceleration);
-		printf("Δx = (( %6.2lf m/s ) - (%6.2lf m/s)) / (2  *%6.2lf m/s^2) = %6.2lf m 입니다. \n", final_velocity, frist_velocity, acceleration, distance);
+		printf("Δx = (%6.2lf m/s)^2 - (%6.2lf m/s)^2 =( 2 * %6.2lfm/s^2 ) 입니다. \n", final_velocity, initial_velocity, acceleration);
 
 		printf("\n=================================================================\n");
 		printf("\n\n\n");
