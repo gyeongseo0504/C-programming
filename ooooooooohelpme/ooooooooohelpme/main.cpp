@@ -8,65 +8,61 @@ int main() {
     srand(time(NULL));
 
     for (int i = 0; i < 10; i++) {
-        int angle = rand() % 361;
-        printf("각도: %d\n", angle);
-
-        int a = angle % 360;
-        if (a > 180)
-            a -= 360;
-
-        printf("각도: %d\n", a);
-
+        int angle = rand() % 91;
         int direction;
-        if (a >= 0) {
-            direction = a / 45;
-            printf("시계 방향으로 %d도씩 돌아야 합니다.\n", abs(a));
-        }
-        else {
-            direction = (360 + a) / 45;
-            printf("반시계 방향으로 %d도씩 돌아야 합니다.\n", abs(a));
-        }
+        int a = rand() % 10;
 
-        switch (direction) {
+        switch (a)
+        {
         case 0:
-            printf("방향: 동\n");
+            direction = 0;
+            printf("동쪽방향 %d°: θ = %d°\n시계방향으로%d° \n", direction, direction, direction);
             break;
         case 1:
-            printf("방향: 북동\n");
+            direction = 90 - angle;
+            printf("북동쪽방향 %d°: θ = %d°\n시계방향으로%d°\n", angle, direction, direction);
             break;
         case 2:
-            printf("방향: 북\n");
+            direction = 90;
+            printf("북쪽방향 %d°: θ = %d°\n시계방향으로%d°\n", direction, direction, direction);
             break;
         case 3:
-            printf("방향: 북서\n");
+            direction = 90 + angle;
+            printf("북서쪽방향 %d°: θ = %d°\n시계방향으로%d°\n", angle, direction, direction);
             break;
         case 4:
-            printf("방향: 서\n");
+            direction = 180;
+            printf("서쪽방향 %d°: θ = %d°\n시계방향으로%d°\n", direction, direction, direction);
             break;
         case 5:
-            printf("방향: 서남\n");
+            direction = 180 - angle;
+            printf("서남쪽방향 %d°: θ = %d°\n시계방향으로%d°\n", angle, direction, direction);
             break;
         case 6:
-            printf("방향: 남\n");
+            direction = -90;
+            printf("남쪽방향 %d°: θ = %d°\n반시계방향으로%d°\n", 360 + direction, direction, direction);
             break;
         case 7:
-            printf("방향: 남동\n");
+            direction = -90 - angle;
+            printf("남동쪽방향 %d°: θ = %d°\n반시계방향으로%d°\n", angle, direction, direction);
             break;
         case 8:
-            printf("방향: 동북\n");
+            direction = angle;
+            printf("동북쪽방향 %d°: θ = %d°\n시계방향으로%d°\n", angle, direction, direction);
             break;
         case 9:
-            printf("방향: 서북\n");
+            direction = 180 - angle;
+            printf("서북쪽방향 %d°: θ = %d°\n시계방향으로%d°\n", angle, direction, direction);
             break;
         case 10:
-            printf("방향: 동남\n");
+            direction = -90 - angle;
+            printf("남서쪽방향 %d°: θ = %d°\n반시계방향으로%d°\n", angle, direction, direction);
             break;
-        default:
-            printf("유효하지 않은 각도\n");
+        case 11:
+            direction = -angle;
+            printf("동남쪽방향 %d°: θ = %d°\n반시계방향으로%d°\n", angle, direction, direction);
             break;
         }
-
-        printf("\n");
     }
 
     return 0;
