@@ -1,59 +1,72 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-const char* getDirection(int angle) {
-    int angleMod = (angle + 360) % 360;
-
-    int direction = angleMod / 45;
-
-    switch (direction) {
-    case 0:
-        return "동";
-    case 1:
-        return "북동";
-    case 2:
-        return "북";
-    case 3:
-        return "북서";
-    case 4:
-        return "서";
-    case 5:
-        return "서남";
-    case 6:
-        return "남";
-    case 7:
-        return "남동";
-    case 8:
-        return "동북";
-    case 9:
-        return "서북";
-    case 10:
-        return "남서";
-    case 11:
-        return "동남";
-    default:
-        return "유효하지 않은 각도";
-    }
-}
-
-int getRandomAngle() {
-    return rand() % 361 - 180;
-}
+#include <stdbool.h>
+#include <math.h>
 
 int main() {
     srand(time(NULL));
 
     for (int i = 0; i < 10; i++) {
-        int angle = getRandomAngle();
+        int angle = rand() % 361;
+        printf("각도: %d\n", angle);
 
-        if (angle >= -180 && angle <= 180) {
-            const char* direction = getDirection(angle);
-            printf("%d도는 %s 방향입니다.\n", angle, direction);
+        int a = angle % 360;
+        if (a > 180)
+            a -= 360;
+
+        printf("각도: %d\n", a);
+
+        int direction;
+        if (a >= 0) {
+            direction = a / 45;
+            printf("시계 방향으로 %d도씩 돌아야 합니다.\n", abs(a));
         }
         else {
-            printf("%d도는 범위를 벗어난 각도입니다.\n", angle);
+            direction = (360 + a) / 45;
+            printf("반시계 방향으로 %d도씩 돌아야 합니다.\n", abs(a));
         }
+
+        switch (direction) {
+        case 0:
+            printf("방향: 동\n");
+            break;
+        case 1:
+            printf("방향: 북동\n");
+            break;
+        case 2:
+            printf("방향: 북\n");
+            break;
+        case 3:
+            printf("방향: 북서\n");
+            break;
+        case 4:
+            printf("방향: 서\n");
+            break;
+        case 5:
+            printf("방향: 서남\n");
+            break;
+        case 6:
+            printf("방향: 남\n");
+            break;
+        case 7:
+            printf("방향: 남동\n");
+            break;
+        case 8:
+            printf("방향: 동북\n");
+            break;
+        case 9:
+            printf("방향: 서북\n");
+            break;
+        case 10:
+            printf("방향: 동남\n");
+            break;
+        default:
+            printf("유효하지 않은 각도\n");
+            break;
+        }
+
+        printf("\n");
     }
 
     return 0;
