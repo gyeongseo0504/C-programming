@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "두변수의 값을 서로 바꾸기", "두변수의 값을 서로 바꾸기\두변수의 값을 서로 바꾸기.vcxproj", "{5AC989C2-F4A0-4AD9-A592-47B4460EA17A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AC989C2-F4A0-4AD9-A592-47B4460EA17A}.Debug|x64.ActiveCfg = Debug|x64
+		{5AC989C2-F4A0-4AD9-A592-47B4460EA17A}.Debug|x64.Build.0 = Debug|x64
+		{5AC989C2-F4A0-4AD9-A592-47B4460EA17A}.Debug|x86.ActiveCfg = Debug|Win32
+		{5AC989C2-F4A0-4AD9-A592-47B4460EA17A}.Debug|x86.Build.0 = Debug|Win32
+		{5AC989C2-F4A0-4AD9-A592-47B4460EA17A}.Release|x64.ActiveCfg = Release|x64
+		{5AC989C2-F4A0-4AD9-A592-47B4460EA17A}.Release|x64.Build.0 = Release|x64
+		{5AC989C2-F4A0-4AD9-A592-47B4460EA17A}.Release|x86.ActiveCfg = Release|Win32
+		{5AC989C2-F4A0-4AD9-A592-47B4460EA17A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B440922-3D0D-4314-84D8-398311AC7262}
+	EndGlobalSection
+EndGlobal
