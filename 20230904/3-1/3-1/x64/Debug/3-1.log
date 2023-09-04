@@ -1,0 +1,10 @@
+﻿  main.cpp
+D:\202315023_HongKyeongSeo\20230904\3-1\3-1\main.cpp(14,2): error C3861: 'gets': 식별자를 찾을 수 없습니다.
+D:\202315023_HongKyeongSeo\20230904\3-1\3-1\main.cpp(18,7): error C2065: 'fname2': 선언되지 않은 식별자입니다.
+D:\202315023_HongKyeongSeo\20230904\3-1\3-1\main.cpp(18,2): error C3861: 'gets': 식별자를 찾을 수 없습니다.
+D:\202315023_HongKyeongSeo\20230904\3-1\3-1\main.cpp(19,16): error C2065: 'fname2': 선언되지 않은 식별자입니다.
+D:\202315023_HongKyeongSeo\20230904\3-1\3-1\main.cpp(21,17): error C2106: '=': 왼쪽 피연산자는 l-value이어야 합니다.
+D:\202315023_HongKyeongSeo\20230904\3-1\3-1\main.cpp(21,24): error C2440: '=': 'bool'에서 'FILE *'(으)로 변환할 수 없습니다.
+D:\202315023_HongKyeongSeo\20230904\3-1\3-1\main.cpp(21,24): message : 정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+D:\202315023_HongKyeongSeo\20230904\3-1\3-1\main.cpp(23,3): error C3861: 'fprint': 식별자를 찾을 수 없습니다.
+D:\202315023_HongKyeongSeo\20230904\3-1\3-1\main.cpp(26,9): error C2065: 'fp': 선언되지 않은 식별자입니다.
