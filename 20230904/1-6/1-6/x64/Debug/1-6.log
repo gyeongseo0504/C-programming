@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\202315023_HongKyeongSeo\20230904\1-6\1-6\main.cpp(14,2): error C2660: 'fputs': 함수는 4개의 인수를 사용하지 않습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\stdio.h(233,26): message : 'fputs' 선언을 참조하십시오.
+D:\202315023_HongKyeongSeo\20230904\1-6\1-6\main.cpp(14,2): message : 인수 목록 '(FILE *, const char [30], int, int)'을(를) 일치시키는 동안
