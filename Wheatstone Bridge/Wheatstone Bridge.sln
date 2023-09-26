@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wheatstone Bridge", "Wheatstone Bridge\Wheatstone Bridge.vcxproj", "{07445183-55E1-4D77-A5D0-C11564DFD67E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07445183-55E1-4D77-A5D0-C11564DFD67E}.Debug|x64.ActiveCfg = Debug|x64
+		{07445183-55E1-4D77-A5D0-C11564DFD67E}.Debug|x64.Build.0 = Debug|x64
+		{07445183-55E1-4D77-A5D0-C11564DFD67E}.Debug|x86.ActiveCfg = Debug|Win32
+		{07445183-55E1-4D77-A5D0-C11564DFD67E}.Debug|x86.Build.0 = Debug|Win32
+		{07445183-55E1-4D77-A5D0-C11564DFD67E}.Release|x64.ActiveCfg = Release|x64
+		{07445183-55E1-4D77-A5D0-C11564DFD67E}.Release|x64.Build.0 = Release|x64
+		{07445183-55E1-4D77-A5D0-C11564DFD67E}.Release|x86.ActiveCfg = Release|Win32
+		{07445183-55E1-4D77-A5D0-C11564DFD67E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4577E44A-3DC8-4EE5-9A51-93DD2F01D36D}
+	EndGlobalSection
+EndGlobal
